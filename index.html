@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogCard</title>
+    <meta name="author" content="Pranaya Rath">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-gray-200 font-family: 'Inter', sans-serif;">
+
+        <div class="p-6">
+            <div class="w-xl-md h-52 mx-auto bg-white  overflow-hidden md:max-w-3xl h-2/3 shadow-md rounded-lg">
+                <div class="md:flex">
+                
+                    <div class="p-4">
+                        <div class="ml-2">
+                            <span class="text-gray-400 text-sm font-medium uppercase">FINANCE</span>
+                            <a href="#" class="block font-bold text-xl mt-2 hover:text-gray-600 hover:underline" id="btn" aria-describedby="tooltip" data-tooltip-text="How disruptor apps transform Fintech?">How disruptor apps transform Fintech?</a>
+                            <div class="text-xs items-end bg-gray-700 text-white p-2 absolute  shadow-xl rounded-lg hidden" id="tooltip" role="tooltip">
+                            </div>
+                            <p class="text-base text-gray-600 mt-2">We kicked off Fintech Talks series together with Facebook to enable everyone to access financial services, innovations and developments in the…</p>
+                        </div>
+            
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <div class="flex items-center">
+                                   
+                                    <a href="#" class="mx-2 text-gray-500 font-semibold hover:underline">Gözde Ulukan </a>
+                                </div>
+                                <span class="mx-1 text-gray-500 text-xm">• 28 July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="md:flex-shrink-0">
+                    <img class="h-48 w-80 object-cover md:w-80 p-2 mt-2 mr-2 ml-2" src="./adsiz-tasarim-6-781_400x225.png" alt="Man looking at item at a store">
+                  </div>
+                </div>
+                
+              </div>
+
+            <div class="w-xl-md h-52 mx-auto bg-white  overflow-hidden md:max-w-3xl h-2/3 shadow-md rounded-lg mt-4">
+                <div class="md:flex">
+                
+                    <div class="p-4">
+                        <div class="ml-2">
+                            <span class="text-gray-400 text-sm font-medium uppercase">INVESTMENTS</span>
+                            <a href="#" class="block font-bold text-xl mt-2 hover:text-gray-600 hover:underline" id="btn" aria-describedby="tooltip" data-tooltip-text="How disruptor apps transform Fintech?">Alesta Investment invested in HUBBOX valued at 750k euro</a>
+                            <div class="text-sm items-end bg-black text-white p-2 absolute  shadow-xl hidden" id="tooltip" role="tooltip">
+                            </div>
+                            <p class="text-base text-gray-600 mt-2">Alesta Investment, which has made various investments recently, has announced that it made</p>
+                        </div>
+            
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <div class="flex items-center">
+                                   
+                                    <a href="#" class="mx-2 text-gray-500 font-semibold hover:underline">Arden Papuççiyan</a>
+                                </div>
+                                <span class="mx-1 text-gray-500 text-xm">• 28 July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="md:flex-shrink-0">
+                    <img class="h-48 w-80 object-cover md:w-80 p-2 mt-2 mr-2 ml-2" src="./hubbox-285_400x225.png" alt="Man looking at item at a store">
+                  </div>
+                </div>
+                
+              </div>
+
+            <div class="w-xl-md h-52 mx-auto bg-white  overflow-hidden md:max-w-3xl h-2/3 shadow-md rounded-lg mt-4">
+                <div class="md:flex">
+                
+                    <div class="p-4">
+                        <div class="ml-2">
+                            <span class="text-gray-400 text-sm font-medium uppercase">INVESTMENTS</span>
+                            <a href="#" class="block font-bold text-xl mt-2 hover:text-gray-600 hover:underline" id="btn" aria-describedby="tooltip" data-tooltip-text="How disruptor apps transform Fintech?">Pisano received an investment of $2.5 million from Elevator Ventures</a>
+                            <div class="text-sm items-end bg-black text-white p-2 absolute  shadow-xl hidden" id="tooltip" role="tooltip">
+                            </div>
+                            <p class="text-base text-gray-600 mt-2">We already mentioned that Pisano, which debuted in December 2017 as a venture that transfers…</p>
+                        </div>
+            
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <div class="flex items-center">
+                                   
+                                    <a href="#" class="mx-2 text-gray-500 font-semibold hover:underline">Arden Papuççiyan</a>
+                                </div>
+                                <span class="mx-1 text-gray-500 text-xm">• 09 July 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="md:flex-shrink-0">
+                    <img class="h-48 w-80 object-cover md:w-80 p-2 mt-2 mr-2 ml-2" src="./pisano-272_400x225.png" alt="Man looking at item at a store">
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+        
+</body>
+<script>
+
+    window.addEventListener('DOMContentLoaded', () =>{
+        const btn = document.querySelector('#btn');
+        const tooltip = document.querySelector('#tooltip');
+
+        tooltip.innerHTML = btn.dataset.tooltipText
+
+        btn.addEventListener('mouseenter', () => {
+            tooltip.classList.remove('hidden');
+        })
+        
+        btn.addEventListener('mouseleave', () => {
+            tooltip.classList.add('hidden');
+        })
+
+    })
+</script>
+</html>
